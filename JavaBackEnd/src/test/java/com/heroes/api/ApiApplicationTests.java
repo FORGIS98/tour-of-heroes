@@ -1,4 +1,4 @@
-package com.tourofheroes.api;
+package com.heroes.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
