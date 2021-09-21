@@ -49,19 +49,9 @@ public class HeroController {
 
     @GetMapping("/heroes/")
     List<Hero> searchHero(@RequestParam(name = "name", required = true) String name) {
-
-        System.out.println("\n\n");
-        System.out.println(name);
-        System.out.println("\n\n");
-
         List<Hero> heroesSearch = new ArrayList<Hero>();
-
-        System.out.println("\n\n");
-        System.out.println(heroesSearch.toString());
-        System.out.println("\n\n");
-
-        for(Hero h: repo.findAll()) {
-            if(h.getName().contains(name)){
+        for (Hero h : repo.findAll()) {
+            if (h.getName().contains(name)) {
                 heroesSearch.add(h);
             }
         }
